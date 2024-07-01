@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/print_BoOK/static/css/main.1055d395.css",
+    "main.js": "/print_BoOK/static/js/main.3dfc6a8d.js",
+    "static/js/453.419a5d54.chunk.js": "/print_BoOK/static/js/453.419a5d54.chunk.js",
+    "index.html": "/print_BoOK/index.html",
+    "main.1055d395.css.map": "/print_BoOK/static/css/main.1055d395.css.map",
+    "main.3dfc6a8d.js.map": "/print_BoOK/static/js/main.3dfc6a8d.js.map",
+    "453.419a5d54.chunk.js.map": "/print_BoOK/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1055d395.css",
+    "static/js/main.3dfc6a8d.js"
+  ]
+}
