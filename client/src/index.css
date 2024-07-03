@@ -1,16 +1,26 @@
+@font-face {
+  font-family: "NanumMyeongjo-Regular";
+  font-weight: normal;
+  src: url("./font/NanumMyeongjo-Regular.ttf") format("woff");
+}
+
+* {
+  font-family: "NanumMyeongjo-Regular";
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 a {
   text-decoration-line: none;

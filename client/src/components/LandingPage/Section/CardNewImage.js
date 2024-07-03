@@ -20,8 +20,8 @@ const CardNewImage = (props) => {
           <p style={{ color: 'gray' }}>{props.author}</p>
           <div style={{ display: 'flex' }}>
             {(!BookMark) ? 
-              <BookOutlined type='button' onClick={handleBookMarkClick} /> 
-              : <BookFilled type='button' onClick={handleBookMarkClick} />}
+              <BookOutlined style={{ fontSize: '28px' }} type='button' onClick={handleBookMarkClick} /> 
+              : <BookFilled style={{ fontSize: '28px' }} type='button' onClick={handleBookMarkClick} />}
           </div>
         </div>
       </div>

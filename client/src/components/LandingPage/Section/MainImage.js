@@ -1,4 +1,5 @@
 import React from 'react'
+import banner_img from '../../img/banner_img.png';
 
 const MainImage = () => {
   return (
@@ -6,10 +7,9 @@ const MainImage = () => {
       width: '100%',
       height: '400px',
       margin: '0 auto',
-      backgroundColor: 'blue'
     }}>
       <div style={{ textAlign: 'center', lineHeight: '400px' }}>
-        <a style={{ color: '#fff' }}>광고 이미지</a>
+        <img style={{ width: "100%", lineHeight: '400px', margin: '0 auto' }} src={banner_img} alt="banner"></img>
       </div>
     </div >
   );

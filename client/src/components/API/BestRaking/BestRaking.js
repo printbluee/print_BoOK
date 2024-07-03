@@ -1,39 +1,32 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from 'antd';
-import PrintBookRanking from '../BestRaking/PrintBookRaking'; 
-import BookStoreRanking from '../BestRaking/BookStoreRanking'; 
+import React from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import BookStoreRanking from '../BestRaking/BookStoreRanking';
+import PrintBookRanking from '../BestRaking/PrintBookRaking';
+import DateTime from '../../DateTime/DateTime'
 
 const BestRanking = () => {
   const { category } = useParams();
   const navigate = useNavigate();
 
-  const handleBookStoreRakingClick = () => {
-    navigate('/bestseller/BookStoreRaking');
-  };
-
-  const handlePrintBookRakingClick = () => {
-    navigate('/bestseller/PrintBookRaking');
-  };
-
   return (
     <div>
       {/* 날짜 */}
-      <div style={{ margin: '20px auto', textAlign: 'center', color: '#94cef5' }}>
-        <h2>2024년 06월 4주</h2>
+      <div>
+        { DateTime }
       </div>
 
       <div style={{ margin: '40px auto', textAlign: 'center' }}>
         <h1>베스트 랭킹</h1>
       </div>
-      
+
       <hr style={{ margin: '0 auto', width: '800px', color: '#135784' }} />
 
       {/* 프린트북랭킹/서점랭킹 버튼 */}
       <div style={{ margin: '30px auto', textAlign: 'center' }}>
         <div>
           <Button
-            onClick={handlePrintBookRakingClick}
+            onClick={() => navigate('/bestseller/PrintBookRaking')}
             type="primary"
             shape="round"
             size='default'
@@ -47,7 +40,7 @@ const BestRanking = () => {
             프린트북 랭킹
           </Button>
           <Button
-            onClick={handleBookStoreRakingClick}
+            onClick={() => navigate('/bestseller/BookStoreRaking')}
             type="primary"
             shape="round"
             size='default'

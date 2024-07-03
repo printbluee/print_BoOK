@@ -1,5 +1,5 @@
 export const API_URL = 'http://www.aladin.co.kr/ttb/api/ItemList.aspx'
-export const API_KEY = 'ttbz9806222232001'
+export const API_KEY = ''
 
 /*
   - ItemNewAll : 신간 전체 리스트

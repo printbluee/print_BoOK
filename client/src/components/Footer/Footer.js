@@ -7,7 +7,7 @@ function Footer() {
       alignItems: 'center',
       justifyContent: 'center',
       fontSize: '1rem',
-      backgroundColor: 'blue',
+      backgroundColor: 'black',
       color: '#fff',
     }}>
       <p>print("BoOK")</p>

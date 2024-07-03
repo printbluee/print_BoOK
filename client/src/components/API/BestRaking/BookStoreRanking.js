@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-// import { useParams, useNavigate } from 'react-router-dom';
-// import { API_URL, API_KEY, QUERY_TYPE, VERSION } from '../../Config';
-import { Row } from 'antd';
-
+import React from 'react';
 import ImageList from '../ImageList/ImageList';
 import data_json from './data.json';
+import { Row } from 'antd';
+
+// import { API_URL, API_KEY, QUERY_TYPE, VERSION } from '../../Config';
+// import React, { useEffect, useState } from 'react';
 
 const BookStoreRanking = () => {
   // const { category } = useParams();
-  // const navigate = useNavigate();
 
   // const [BookStoreRanking, setBookStoreRanking] = useState([]);
 
@@ -20,6 +19,7 @@ const BookStoreRanking = () => {
   //   QUERY_TYPE.forEach(query => {
   //     if (query === QueryType) {
   //       api_url = `https://cors-anywhere.herokuapp.com/${API_URL}?ttbkey=${API_KEY}&QueryType=${query}&MaxResults=40&start=1&SearchTarget=Book&output=js&Version=${VERSION}&Cover=Big`;
+  //       console.log(api_url)
   //     }
   //   });
 

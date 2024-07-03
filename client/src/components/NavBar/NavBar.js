@@ -13,7 +13,6 @@ const NavBar = () => {
     setMenu(!Menu)
   };
 
-
   return (
     <div style={{
       width: '80%',
@@ -23,7 +22,7 @@ const NavBar = () => {
     }}>
       <Row gutter={[10, 10]} justify="space-between" align="middle">
         <Col lg={4} md={6} sm={12} xs={24}>
-          <MenuOutlined onClick={handleMenuClick}/>
+          <MenuOutlined onClick={handleMenuClick} style={{ fontSize: '22px' }}/>
           {Menu && 
             <div>
               <DropMenu />
@@ -31,7 +30,7 @@ const NavBar = () => {
           }
         </Col>
         <Col lg={4} md={6} sm={12} xs={24}>
-          <a href="/">
+          <a href="/print_BoOK">
             <img style={{ maxWidth: "100%" }} src={logo_ver} alt="Logo"></img>
           </a>
         </Col>
