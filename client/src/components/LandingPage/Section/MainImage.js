@@ -5,11 +5,11 @@ const MainImage = () => {
   return (
     <div style={{
       width: '100%',
-      height: '400px',
+      lineHeight: '400px',
       margin: '0 auto',
     }}>
       <div style={{ textAlign: 'center', lineHeight: '400px' }}>
-        <img style={{ width: "100%", lineHeight: '400px', margin: '0 auto' }} src={banner_img} alt="banner"></img>
+        <img style={{ height: '100%', margin: '0 auto' }} src={banner_img} alt="banner"></img>
       </div>
     </div >
   );

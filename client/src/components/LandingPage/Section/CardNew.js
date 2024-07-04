@@ -38,7 +38,7 @@ const CardNew = () => {
       <Row gutter={[10, 10]} justify="center">
         {data_list.map(data => (
           <React.Fragment key={data.isbn13}>
-            <Col lg={12} md={24} sm={24} xs={24} style={{ display: 'flex', justifyContent: 'center', margin: '5px 0' }}>
+            <Col lg={12} md={24} sm={24} xs={24} style={{ justifyContent: 'center', margin: '5px 0', display: 'flex' }}>
               <CardNewImage
                 src={data.cover}
                 alt={data.title}

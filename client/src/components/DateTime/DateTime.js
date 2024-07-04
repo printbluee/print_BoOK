@@ -1,55 +1,57 @@
-import React, { useState } from 'react';
-
-// DateDropdown 컴포넌트가 정의되어 있다고 가정하고 사용합니다.
-const DateDropdown = ({ onDateChange }) => {
-  // 필요한 기능 구현
-  return (
-    <div>
-      {/* JSX 내에서 DateDropdown 컴포넌트 사용 예시 */}
-      <select onChange={(e) => onDateChange(e.target.value)}>
-        <option value="2024-07-04">2024-07-04</option>
-        <option value="2024-07-05">2024-07-05</option>
-        {/* 필요한 옵션들을 추가하세요 */}
-      </select>
-    </div>
-  );
-};
+import React, { useState, useEffect } from 'react';
 
 const DateTime = () => {
-  const [selectedDate, setSelectedDate] = useState('');
+  // 상태 변수들 설정
+  const [year, setYear] = useState('');
+  const [month, setMonth] = useState('');
+  const [week, setWeek] = useState('');
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-    // 날짜 변경 시 처리할 로직 추가
+  // 현재 년도, 월 구하기
+  useEffect(() => {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1; // getMonth()는 0부터 시작하므로 +1 해줍니다.
+
+    setYear(currentYear.toString());
+    setMonth(currentMonth.toString());
+  }, []); // 컴포넌트가 처음 렌더링될 때 한 번만 실행됩니다.
+
+  // 주차 선택 핸들러
+  const handleWeekChange = (event) => {
+    setWeek(event.target.value);
   };
 
-  const IDateDropdown = {
-    onDateChange: handleDateChange,
-    defaultDate: '',
-    className: {
-      container: '',
-      select: '',
-      option: '',
-    },
-    styles: {
-      container: {},
-      select: {},
-      option: {},
-    },
-    selectPlaceholder: {
-      year: '',
-      month: '',
-      day: '',
-    },
-    yearStart: 0,
-    yearEnd: 0,
-  };
+  // 년도 옵션 생성 (1990년부터 현재 년도까지)
+  const yearOptions = [];
+  const startYear = 1990;
+  const currentYear = new Date().getFullYear();
+  for (let year = startYear; year <= currentYear; year++) {
+    yearOptions.push(<option key={year} value={year}>{year}년</option>);
+  }
+
+  // 월 옵션 생성 (1월부터 12월까지)
+  const monthOptions = [];
+  for (let month = 1; month <= 12; month++) {
+    monthOptions.push(<option key={month} value={month}>{month}월</option>);
+  }
 
   return (
-    <div style={{ margin: '20px auto', textAlign: 'center', color: '#94cef5' }}>
+    <div>
       <h2>
-        {/* DateDropdown 컴포넌트를 사용할 때 props 전달 */}
-        <DateDropdown onDateChange={IDateDropdown.onDateChange} />
+        <select style={{ border: '0', color: "#135784" }} value={year} onChange={(e) => setYear(e.target.value)}>
+          {yearOptions}
+        </select>
+
+        <select style={{ border: '0', color: "#135784" }} value={month} onChange={(e) => setMonth(e.target.value)}>
+          {monthOptions}
+        </select>
+
+        <select style={{ border: '0', color: "#135784" }} value={week} onChange={handleWeekChange}>
+          <option value="1">1주</option>
+          <option value="2">2주</option>
+          <option value="3">3주</option>
+          <option value="4">4주</option>
+        </select>
       </h2>
     </div>
   );

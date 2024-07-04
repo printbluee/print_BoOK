@@ -12,8 +12,8 @@ const BestRanking = () => {
   return (
     <div>
       {/* 날짜 */}
-      <div>
-        { DateTime }
+      <div style={{ margin: '40px auto', textAlign: 'center' }}>
+        { <DateTime /> }
       </div>
 
       <div style={{ margin: '40px auto', textAlign: 'center' }}>
