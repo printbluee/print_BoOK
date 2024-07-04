@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/print_BoOK/static/css/main.8d46ca31.css",
-    "main.js": "/print_BoOK/static/js/main.7bdd76ac.js",
+    "main.js": "/print_BoOK/static/js/main.23bfee87.js",
     "static/js/453.419a5d54.chunk.js": "/print_BoOK/static/js/453.419a5d54.chunk.js",
     "static/media/NanumMyeongjo-Regular.ttf": "/print_BoOK/static/media/NanumMyeongjo-Regular.01893c39cd1a403ef0a5.ttf",
     "static/media/banner_img.png": "/print_BoOK/static/media/banner_img.ade781bdd1d8ec28238e.png",
     "index.html": "/print_BoOK/index.html",
     "main.8d46ca31.css.map": "/print_BoOK/static/css/main.8d46ca31.css.map",
-    "main.7bdd76ac.js.map": "/print_BoOK/static/js/main.7bdd76ac.js.map",
+    "main.23bfee87.js.map": "/print_BoOK/static/js/main.23bfee87.js.map",
     "453.419a5d54.chunk.js.map": "/print_BoOK/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d46ca31.css",
-    "static/js/main.7bdd76ac.js"
+    "static/js/main.23bfee87.js"
   ]
 }
