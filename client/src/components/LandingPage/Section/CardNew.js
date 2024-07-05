@@ -1,10 +1,12 @@
 import React from 'react'
-import data_json from './CardNew.json'
+import data_json from '../../Data/BookInfo/BookInfo.json';
 import CardNewImage from './CardNewImage'
 import { Row, Col } from 'antd';
+
 // import React, { useEffect, useState } from 'react'
 // import { API_URL, API_KEY, QUERY_TYPE, VERSION } from '../../Config';
 
+/* 베스트 셀러 페이지 */
 const CardNew = () => {
 
   // const [Book, setBook] = useState([]);

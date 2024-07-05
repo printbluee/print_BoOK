@@ -14,7 +14,7 @@ const CardNewImage = (props) => {
     <Card hoverable style={{ width: '100%', margin: '10px' }}>
       <div style={{ display: 'flex' }}>
         {/* 왼쪽 영역: 설명 */}
-        <div style={{ width: '250px', flex: '1', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}>
+        <div style={{ width: '250px', flex: '1', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', cursor: 'default' }}>
         <div style={{ margin: 'auto 15px', textAlign: 'left' }}>
           <p style={{ color: 'gray', wordBreak: 'keep-all' }}>{props.description}</p>
           <p style={{ color: 'gray' }}>{props.author}</p>
@@ -27,7 +27,7 @@ const CardNewImage = (props) => {
       </div>
 
         {/* 오른쪽 영역: 사진 */}
-        <div style={{ width: '250px', flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ width: '250px', flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'default' }}>
           <img
             src={props.src}
             alt={props.title}

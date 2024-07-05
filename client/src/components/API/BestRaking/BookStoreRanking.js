@@ -1,11 +1,12 @@
 import React from 'react';
 import ImageList from '../ImageList/ImageList';
-import data_json from './data.json';
+import data_json from '../../Data/BookInfo/BookInfo.json';
 import { Row } from 'antd';
 
 // import { API_URL, API_KEY, QUERY_TYPE, VERSION } from '../../Config';
 // import React, { useEffect, useState } from 'react';
 
+/* 서점 랭킹 컴포넌트 */
 const BookStoreRanking = () => {
   // const { category } = useParams();
 

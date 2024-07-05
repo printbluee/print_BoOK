@@ -5,6 +5,7 @@ import BookStoreRanking from '../BestRaking/BookStoreRanking';
 import PrintBookRanking from '../BestRaking/PrintBookRaking';
 import DateTime from '../../DateTime/DateTime'
 
+/* 베스트 셀러 페이지 */
 const BestRanking = () => {
   const { category } = useParams();
   const navigate = useNavigate();
