@@ -1,6 +1,6 @@
 import React from 'react'
 import data_json from '../../../../Data/BookInfo/CardNew.json';
-import CardNewImage from './CardNewImage'
+import CardNewImage from '../../Index/CardNew/CardNewImage'
 import { Row, Col } from 'antd';
 
 // import React, { useEffect, useState } from 'react'

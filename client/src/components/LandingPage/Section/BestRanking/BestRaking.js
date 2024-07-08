@@ -1,8 +1,8 @@
-import { Button } from 'antd';
 import React from 'react';
+import { Button } from 'antd';
 import { useNavigate, useParams } from 'react-router-dom';
-import BookStoreRanking from '../BestRaking/BookStoreRanking';
-import PrintBookRanking from '../BestRaking/PrintBookRaking';
+import BookStoreRanking from '../../Section/BestRanking/BookStoreRanking';
+import PrintBookRanking from '../../Section/BestRanking/PrintBookRaking';
 import DateTime from '../../../DateTime/DateTime'
 
 /* 베스트 셀러 페이지 */

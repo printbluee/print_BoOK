@@ -1,7 +1,6 @@
-import MainImage from './Section/MainImage';
-import SearchVar from './Section/SearchVar';
-import CardNew from './Section/CardNew';
-// import BestRaking from '../API/BestRaking/BestRaking'
+import SearchVar from '../LandingPage/Section/SearchBook/SearchVar';
+import MainImage from '../LandingPage/Section/Index/MainImg/MainImage'
+import CardNew from '../LandingPage/Section/Index/CardNew/CardNew';
 
 const LandingPage = () => {
   return (

@@ -1,9 +1,8 @@
 import NavBar from './NavBar/NavBar';
 import Footer from './Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
-import BestRanking from './API/BestRaking/BestRaking';
+import BestRanking from '../components/LandingPage/Section/BestRanking/BestRaking';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   return (
