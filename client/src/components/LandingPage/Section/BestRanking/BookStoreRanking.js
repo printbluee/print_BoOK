@@ -1,6 +1,6 @@
 import React from 'react';
-import ImageList from '../ImageList/ImageList';
-import data_json from '../../Data/BookInfo/BookInfo.json';
+import ImageList from './ImageList';
+import data_json from '../../../Data/BookInfo/BookInfo.json';
 import { Row } from 'antd';
 
 // import { API_URL, API_KEY, QUERY_TYPE, VERSION } from '../../Config';

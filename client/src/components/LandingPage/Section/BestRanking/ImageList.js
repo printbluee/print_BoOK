@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Col } from 'antd';
 
+// 랭킹 리스트 책 마우스 호버시 기능
 const ImageList = (props) => {
   
   const [heart, setheart] = useState(false)

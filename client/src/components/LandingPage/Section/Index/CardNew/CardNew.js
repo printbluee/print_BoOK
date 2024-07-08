@@ -1,5 +1,5 @@
 import React from 'react'
-import data_json from '../../Data/BookInfo/BookInfo.json';
+import data_json from '../../../../Data/BookInfo/CardNew.json';
 import CardNewImage from './CardNewImage'
 import { Row, Col } from 'antd';
 
