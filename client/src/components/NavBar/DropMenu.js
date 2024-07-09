@@ -6,10 +6,6 @@ import { useNavigate } from 'react-router-dom';
 const DropMenu = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/bestseller/PrintBookRaking');
-  };
-
   const items = [
     {
       key: 'categ1',
@@ -36,7 +32,7 @@ const DropMenu = () => {
         {
           key: '3',
           label: '프린트북 랭킹',
-          onClick: handleClick
+          onClick: () => navigate('/bestseller/PrintBookRaking')
         },
         {
           key: '4',

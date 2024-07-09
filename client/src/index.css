@@ -8,6 +8,11 @@
   font-family: "NanumMyeongjo-Regular";
 }
 
+*::placeholder  {
+  font-family: "NanumMyeongjo-Regular";
+  color: white
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -61,4 +66,8 @@ a {
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+.white-placeholder ::placeholder {
+  color: white;
 }

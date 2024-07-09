@@ -3,10 +3,10 @@ import logo_ver from '../img/logo_ver.png';
 import DropMenu from './DropMenu'
 import { MenuOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd';
-
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
-  
+  const navigate = useNavigate();
   const [Menu, setMenu] = useState(false)
 
   const handleMenuClick = () => {
@@ -35,7 +35,7 @@ const NavBar = () => {
           </a>
         </Col>
         <Col lg={4} md={6} sm={12} xs={24}>
-          <a style={{ margin: '0 10px' }} href="/login">로그인</a>
+          <a style={{ margin: '0 10px' }} onClick={() => navigate('/login')}>로그인</a>
           <a href="/sign">회원가입</a>
         </Col>
       </Row>
