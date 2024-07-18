@@ -59,7 +59,7 @@ const BookStoreRanking = () => {
           ))}
         </Row>
       </div>
-      <p style={{ textAlign: 'center', color: 'gray', fontSize: '9px' }}>도서 DB 제공 : 알라딘 인터넷서점( www.aladin.co.kr)</p>
+      <p style={{ textAlign: 'center', color: 'gray' }}>도서 DB 제공 : 알라딘 인터넷서점( www.aladin.co.kr)</p>
     </div>
   );
 };

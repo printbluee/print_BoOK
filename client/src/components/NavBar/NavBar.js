@@ -36,7 +36,7 @@ const NavBar = () => {
         </Col>
         <Col lg={4} md={6} sm={12} xs={24}>
           <a style={{ margin: '0 10px' }} onClick={() => navigate('/login')}>로그인</a>
-          <a href="/sign">회원가입</a>
+          <a onClick={() => navigate('/join')}>회원가입</a>
         </Col>
       </Row>
     </div>
